@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="인공지능 교육 및 개발을 위한 최고의 파트너 (주) 에이아이캐슬 입니다. 강화학습, 자율주행, 클라우드 컴퓨팅, 로보틱스 등 다양한 분야에서 교육과 컨설팅을 제공합니다. 인공지능 기술 도입 및 교육을 찾고 있다면 AI Castle과 함께하세요!">
+    <meta name="author" content="" />
+    <title>(주)에이아이캐슬 - AI Castle</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* 어두운 배경 색상 설정 */
+            opacity: 0;
+            /* 기본적으로 투명하게 설정 */
+            transition: opacity 0.3s ease;
+            /* 투명도 변화에 대한 전환 효과 설정 */
+        }
+
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            color: white;
+            /* 텍스트 색상 설정 */
+            font-size: 20px;
+            /* 텍스트 크기 설정 */
+            text-align: center;
+        }
+
+        .image-container:hover .text-overlay {
+            opacity: 1;
+            /* 마우스를 올렸을 때 투명도를 1로 설정하여 보이게 함 */
+        }
+
+        .kakao-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #FEE500;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            line-height: 60px;
+            color: #000;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .kakao-chat img {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <div style="display:flex; align-items:center;">
+                <img src="assets/favicon.ico" height="40em" style="margin-right:10px">
+                <a class="navbar-brand" href="#page-top">AI Castle</a>
+            </div>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Development">Development</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">
+                        A way to AI Castle</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">(주)에이아이캐슬은 혁신적인 인공지능 개발과 교육을 선도하는 기업입니다. </br>우리는 AI 전문 지식을 바탕으로 창의적이고
+                        차별화된 솔루션을 제공합니다.</p>
+                    <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- About-->
+    <section class="page-section bg-primary" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">인공지능 교육 및 개발을 위한 최고의 파트너</h2>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4">(주) 에이아이캐슬은 최신 인공지능 기술을 바탕으로 혁신적인 솔루션과 서비스를 제공하며, 인공지능 분야에서 교육과 컨설팅을
+                        제공하는 회사입니다. 우리의 목표는 고객의 성공을 위해 최선을 다하고, 기술과 교육에 대한 열정을 바탕으로 항상 최고의 결과물을 만들어내는 것입니다!</p>
+                    <a class="btn btn-light btn-xl" href="#Development" style="margin-right:30px;">AI 개발 사업</a>
+                    <a class="btn btn-light btn-xl" href="#education" style="margin-left:30px;">AI 교육 사업</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services-->
+    <section class="page-section" id="Development">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">A.I. Development</h2>
+            <hr class="divider" />
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-bounding-box fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Computer Vision</h3>
+                        <p class="text-muted mb-0">
+                            <!-- 컴퓨터 비전은 컴퓨터가 이미지나 비디오 데이터를 처리하고 해석하는 기술로, 이미지 분류, 객체 탐지, 얼굴 인식, 영상 분석 등 다양한 응용 분야에서 사용됩니다.  -->
+                            에이아이캐슬은 컴퓨터 비전 기술을 활용하여 자율주행 차량의 환경 인식, 보안 시스템의 모션 감지, 의료 영상 분석 등 다양한 영역에서 혁신적인 솔루션을 개발하고
+                            있습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-controller fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Reinforcement Learning</h3>
+                        <p class="text-muted mb-0">
+                            <!-- 강화학습(Reinforcement Learning)은 에이전트가 환경과 상호작용하며 행동에 대한 보상을 받고, 이 보상을 최대화하는 방향으로 학습하는 기술입니다.  -->
+                            에이아이캐슬은 자율주행, 로봇 제어, 게임 AI 등 다양한 분야에서 강화학습(Reinforcement Learning)을 활용하여 최적의 결정을 내리고 문제를
+                            해결하는 데에 도움을 줄 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-chat-left-text-fill fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Natural Language Processing</h3>
+                        <p class="text-muted mb-0">
+                            <!-- 자연어 처리(Natural Language Processing)는 인간의 언어를 컴퓨터가 이해하고 처리할 수 있도록 하는 기술로, 기계 번역, 텍스트 분류, 질의응답 시스템, 챗봇 등 다양한 응용 분야에서 사용됩니다.  -->
+                            에이아이캐슬은 자연어 처리(Natural Language Processing) 기술을 활용하여 다양한 언어로 된 텍스트 데이터를 분석하고 이해하여 유용한 정보를
+                            추출하거나 자동화된 대화 시스템을 개발하는 등 다양한 서비스를 제공할 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi bi-graph-down  fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Predictive Analytics</h3>
+                        <p class="text-muted mb-0">
+                            <!-- 예측 분석(Predictive Analytics)은 에이아이캐슬이 특화된 사업 분야 중 하나입니다. 이 분야에서는 데이터 마이닝, 통계 모델링, 머신러닝 등의 기술을 활용하여 과거 데이터로부터 미래의 사건이나 결과를 예측하는 모델을 개발합니다.  -->
+                            에이아이캐슬은 다양한 산업 분야에서 예측 분석(Predictive Analytics)을 구축하여 비즈니스 의사 결정에 도움을 주고, 효율성을 향상시키는 솔루션을
+                            제공할 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action-->
+    <section class="page-section bg-dark text-white" style="padding:4rem 0" id="education">
+        <div class="container px-4 px-lg-5 text-center">
+            <h2 class="mb-4" style="margin-bottom:0rem !important;">A.I. Education</h2>
+        </div>
+    </section>
+    <!-- Portfolio-->
+    <div id="">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-4 col-sm-6 image-container" style="position:relative;">
+                    <a class="portfolio-box" href="https://ai-castle.github.io/aws-deepracer-school-ko"
+                        title="AWS DeepRacer" target="_blank">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.png" alt="..." />
+                        <div class="portfolio-box-caption text-overlay">
+                            <span class="text">
+                                Ebook <br />
+                                AWS DeepRacer School
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 image-container" style="position:relative;">
+                    <a class="portfolio-box" href="https://inf.run/jytR" title="AWS DeepRacer" target="_blank">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.png" alt="..." />
+                        <div class="portfolio-box-caption text-overlay">
+                            <span class="text">
+                                Inflearn<br />
+                                인공지능의 원리 강의
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 image-container" style="position:relative;">
+                    <a class="portfolio-box" href="https://inf.run/JPFR" title="AWS DeepRacer" target="_blank">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.png" alt="..." />
+                        <div class="portfolio-box-caption text-overlay">
+                            <span class="text">
+                                Inflearn<br />
+                                나만의 자율주행 만들기 과정
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 image-container" style="position:relative;">
+                    <a class="portfolio-box"
+                        href="https://www.canva.com/design/DAFg__AZI3Q/S1P9bjgqabrrWefc9N96Ag/view?utm_content=DAFg__AZI3Q&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                        title="AWS DeepRacer" target="_blank">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.png" alt="..." />
+                        <div class="portfolio-box-caption text-overlay">
+                            <span class="text">
+                                청소년을 위한 인공지능 특강<br />
+                                나만의 AI 만들기
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 image-container" style="position:relative;">
+                    <a class="portfolio-box" href="https://youtu.be/qcB-OxpzWRw" title="AWS DeepRacer" target="_blank">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.png" alt="..." />
+                        <div class="portfolio-box-caption text-overlay">
+                            <span class="text">
+                                Youtube<br />
+                                인공지능의 뇌 구조 알아보기
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 image-container" style="position:relative;">
+                    <a class="portfolio-box"
+                        href="https://www.canva.com/design/DAFdtYNwoB4/5wTogLlFV2rJ9EgdgYrWDA/view?utm_content=DAFdtYNwoB4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                        title="AWS DeepRacer" target="_blank">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.png" alt="..." />
+                        <div class="portfolio-box-caption text-overlay">
+                            <span class="text">
+                                AI 머신러닝의 정식<br />
+                                인공지능 위탁 교육과정 안내
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Call to action-->
+    <section class="page-section bg-dark text-white" id="education-bottom" style="padding:2rem 0;"></section>
+
+    <!-- Contact-->
+    <section class="page-section" id="contact" style="">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Contact</h2>
+            <hr class="divider" />
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-3 col-md-4 text-center">
+                    <a target="_blank" href="mailto:info@ai-castle.com" style="text-decoration: none;">
+                        <div class="mt-5" style="margin-top:1rem !important;">
+                            <div class="mb-2"><i class="bi-envelope fs-1 text-primary"></i></div>
+                            <p class="text-muted mb-0"> 
+                                info@ai-castle.com
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 text-center">
+                    <a target="_blank" href="tel:031-307-2929" style="text-decoration: none;">
+                        <div class="mt-5" style="margin-top:1rem !important; margin-bottom:1rem !important;">
+                            <div class="mb-2"><i class="bi-telephone fs-1 text-primary"></i></div>
+                            <p class="text-muted mb-0">
+                                031-307-2929
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe6T6n9QcwpUgC3G-p8zis3dgJ1KW-_fTJUiiXeHiG0LFIcig/viewform?embedded=true"
+            width="640" height="640" frameborder="0" marginheight="0" marginwidth="0" class="container-fluid p-0"
+            scrolling="no">로드 중…</iframe>
+
+    </section>
+
+    <!-- 카카오톡 채널 로고 -->
+    <a href="http://pf.kakao.com/_tAIHxj" target="_blank" class="kakao-chat">
+        <img src="./assets/img/카카오톡투명로고.png" alt="KakaoTalk 상담" style="border-radius: 50%;" />
+    </a>
+
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">주소: 경기도 용인시 기흥구 강남로9, 504-362호 (주) 에이아이캐슬 <br>전화: 031-307-2929 |
+                email: info@ai-castle.com</div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
